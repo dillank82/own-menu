@@ -1,3 +1,4 @@
+// Assumes unique items: with duplicates, a value equal to `last` can still be returned.
 export function pickRandom<T>(items: readonly T[], last?: T): T | undefined {
     if (items.length === 0) return undefined
     if (items.length === 1) return items[0]
